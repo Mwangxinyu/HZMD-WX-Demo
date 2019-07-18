@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "card-main": "/components/card-main/card-main",
+        "sz-button": "/base/sz-button/sz-button"
+    },
+    "navigationBarTitleText": "转发名片"
+}

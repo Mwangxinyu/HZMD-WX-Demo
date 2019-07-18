@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "card-panel": "/base/card-panel/card-panel",
+        "sz-button": "/base/sz-button/sz-button"
+    },
+    "component": true
+}

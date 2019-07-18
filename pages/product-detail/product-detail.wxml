@@ -1,0 +1,18 @@
+<view class="container product-detail">
+
+    <!-- 产品信息 -->
+    <product-swiper-module info="{{ productInfo }}" />
+    
+    <!-- 展示信息 -->
+    <show-info-module
+        gray
+        title="{{ showInfoData.title }}"
+        listData="{{ showInfoData.list }}" />
+
+    <!-- 装饰物 -->
+    <decorative-materiel-line />
+
+    <!-- 物料面板 -->
+    <product-detail-materiel />
+
+</view>

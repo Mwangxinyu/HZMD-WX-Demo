@@ -1,0 +1,3 @@
+<view class="poster" style="height: {{ height }}rpx">
+    <image src="{{ link }}" />
+</view>

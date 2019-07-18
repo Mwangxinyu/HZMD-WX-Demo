@@ -1,0 +1,52 @@
+<!-- index.wxml -->
+<view class="container">
+
+    <!-- 用户信息卡片 -->
+    <card-main info="{{ userData }}" class="card-box" />
+
+    <!-- 浏览-点赞  -->
+    <card-materiel-module 
+        callerData="{{ cardMaterielData.callerData }}" 
+        likeData="{{ cardMaterielData.likeData }}"
+        bind:transCard="transCard"
+        bind:addContact="addContact"
+        class="v-gap" />
+
+    <!-- 推荐产品 -->
+    <recommend-product-module 
+        more 
+        title="{{ recommendData.title }}" 
+        bottom-num="{{ recommendData.bottomNum }}"
+        listData="{{ recommendData.list }}"
+        class="v-gap" />
+
+    <!-- 个人简介 -->
+    <person-resume-module
+        title="{{ resumeData.title }}"
+        bottom-num="{{ resumeData.bottomNum }}"
+        info="{{ resumeData.info }}"
+        class="v-gap" />
+
+    <!-- 我的标签 -->
+    <person-tag-module
+        title="{{ personTapData.title }}"
+        bottom-num="{{ personTapData.bottomNum }}"
+        listData="{{ personTapData.list }}"
+        class="v-gap" />
+
+    <!-- 展示信息 -->
+    <show-info-module
+        title="{{ showInfoData.title }}"
+        listData="{{ showInfoData.list }}" />
+
+    <!-- 装饰分割线 -->
+    <decorative-materiel-line />
+
+    <!-- position components -->
+    <materiel-holder bind:tap="jumpCardHolder" class="materiel-holder" />
+    <fly-circle bind:getphone="getphone" class="fly-circle" title="留言" />
+
+    <!-- 转发 action-sheet -->
+    <trans-panel wx:if="{{ shareFlag }}" bind:cancel="hideShareAction" />
+
+</view>

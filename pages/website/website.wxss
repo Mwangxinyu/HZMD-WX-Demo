@@ -1,0 +1,6 @@
+@import '../../styles/common.wxss';
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+}

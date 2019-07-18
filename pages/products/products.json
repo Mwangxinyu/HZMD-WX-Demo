@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "product-card": "/components/product-card/product-card",
+        "decorative-materiel-line": "/base/decorative-materiel-line/decorative-materiel-line",
+        "poster": "/base/poster/poster",
+        "fly-circle": "/base/fly-circle/fly-circle",
+        "sz-empty": "/base/sz-empty/sz-empty"
+    },
+    "navigationBarTitleText": "产品列表"
+}

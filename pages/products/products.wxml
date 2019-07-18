@@ -1,0 +1,30 @@
+<view class="container">
+    <view hidden="{{ productList.length === 0 }}">
+        <!-- 海报 -->
+        <poster height="{{ 300 }}" />
+
+        <!-- 产品列表 -->
+        <view class="product-list">
+            <product-card
+                bind:tap="jumpProductDetailPage" 
+                wx:for="{{ productList }}"
+                wx:key="{{ index }}"
+                info="{{ item }}"
+                width="{{ 345 }}"
+                class="{{ (productList.length -index < 3) ? 'mb0' : '' }}" />
+        </view>
+
+        <!-- 装饰物 -->
+        <decorative-materiel-line />
+
+        <!-- 留言球 -->
+        <fly-circle bind:getphone="getphone" class="fly-circle" title="留言" />
+    </view>
+
+    <!-- 产品为空提示 -->
+    <sz-empty 
+        style="display: {{ productList.length === 0  ? 'block' : 'none' }}" 
+        img="/images/product-empty.png" 
+        title="暂无产品" />
+
+</view>

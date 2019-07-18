@@ -1,0 +1,12 @@
+<view class="product-card {{ currentShadow }}" style="width: {{ width }}rpx">
+    <image style="width: {{ width }}rpx; height: {{ width }}rpx;" />
+    <view class="info-box">
+        <text class="title ellipsis-2">{{ info.title }}</text>
+        <view class="sale-price price">价格：
+            <text>{{ info.salePrice }}元/人</text>
+        </view>
+        <view class="trans-price price">促销价：
+            <text>{{ info.transPrice }}元/人</text>
+        </view>
+    </view>
+</view>

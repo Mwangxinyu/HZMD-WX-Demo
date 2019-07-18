@@ -1,0 +1,10 @@
+@import '../../styles/common.wxss';
+
+.card-box {
+    margin: 30rpx 0 40rpx 0; 
+}
+
+.savePoster {
+    margin: 0 40rpx;
+    height: 80rpx;
+}

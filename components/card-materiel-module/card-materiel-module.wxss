@@ -1,0 +1,22 @@
+@import '../../styles/common.wxss';
+
+.card-materiel {
+    background: rgba(255, 255, 255, 1);
+}
+
+.card-materiel .control-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-materiel .control-box sz-button {
+    width: 320rpx;
+    height: 70rpx;
+}
+
+.card-materiel .show-box {
+    display: flex;
+    margin-top: 30rpx;
+    justify-content: space-between;
+}

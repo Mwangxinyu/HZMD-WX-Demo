@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "sz-button": "/base/sz-button/sz-button",
+        "like-caller-panel": "/components/like-caller-panel/like-caller-panel"
+    },
+    "component": true
+}

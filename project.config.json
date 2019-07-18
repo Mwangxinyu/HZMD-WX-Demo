@@ -1,0 +1,82 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx784f20532f68ac27",
+	"projectname": "shaozi-smartCard",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "官网调试",
+					"pathName": "pages/website/website",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "产品调试",
+					"pathName": "pages/products/products",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "产品详情调试",
+					"pathName": "pages/product-detail/product-detail",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "名片调试",
+					"pathName": "pages/card/card",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索名片调试",
+					"pathName": "pages/card-search/card-search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "转发名片",
+					"pathName": "pages/card-trans/card-trans",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "IM",
+					"pathName": "pages/im/im"
+				}
+			]
+		}
+	}
+}

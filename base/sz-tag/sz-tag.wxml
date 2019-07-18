@@ -1,0 +1,4 @@
+<view class="tag {{ type }}">
+    <text class="name">{{ name }}</text>
+    <text class="like">{{ like }}</text>
+</view>

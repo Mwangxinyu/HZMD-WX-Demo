@@ -1,0 +1,5 @@
+<card-panel title="{{ title }}" bottom-num="{{ bottomNum }}" gray="{{ gray }}">
+    <view slot="content" class="content">
+        <show-image list-data="{{ listData }}" />
+    </view>
+</card-panel>

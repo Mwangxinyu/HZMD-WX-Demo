@@ -1,0 +1,9 @@
+<card-panel title="{{ title }}" bottom-num="{{ bottomNum }}" titleCenter>
+    <view class="content" slot="content">
+        <member-card 
+            wx:for="{{ info }}" 
+            wx:key="{{ index }}" 
+            line-class-name="{{ (index % 2 === 0) ? 'one' : 'two' }}"
+            info="{{ item }}" />
+    </view>
+</card-panel>

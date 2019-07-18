@@ -1,0 +1,45 @@
+@import '../../styles/iconfont.wxss';
+
+.like-caller-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.like-caller-panel .list-box {
+    display: flex;
+}
+
+.like-caller-panel .list-box .item {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+}
+
+.like-caller-panel .list-box image {
+    background-color: #BCBCBC;
+    margin-right: 5rpx;
+}
+
+.like-caller-panel .list-box .more-btn {
+    background: rgba(255, 255, 255, 1);
+    border: 2rpx solid rgba(225, 225, 225, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+}
+
+.icon-shenglvehao {
+    color: #E1E1E1;
+}
+
+.icon-dianzan1 {
+    color: #888888;
+}
+
+.like-caller-panel .text {
+    font-size: 20rpx;
+    color: rgba(155, 155, 155, 1);
+    line-height: 28rpx;
+    margiin-top: 12rpx;
+}

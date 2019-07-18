@@ -1,0 +1,8 @@
+<card-panel title="{{ title }}" bottom-num="{{ bottomNum }}" titleCenter>
+    <view class="content" slot="content">
+        <image 
+            wx:for="{{ info }}"
+            wx:key="{{ index }}"
+            src="{{ item }}"/>
+    </view>
+</card-panel>

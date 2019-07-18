@@ -1,0 +1,57 @@
+<view class="container">
+
+    <view class="data-container" hidden="{{ empty }}">
+        <!-- 轮播图 -->
+        <sz-swiper
+            class="v-gap"
+            height="{{ swiperData.height }}"
+            img-list="{{ swiperData.imgList }}"
+            circular="{{ swiperData.circular }}"
+            autoplay="{{ swiperData.autoplay }}"
+            indicator-dots="{{ swiperData.indicatorDots }}"
+            indicator-dots-color="{{ swiperData.indicatorDotsColor }}"
+            indicator-dots-select-color="{{ swiperData.indicatorDotsSelectColor }}"
+            interval="{{swiperData.interval }}"
+            duration="{{ swiperData.duration }}" />
+
+        <!-- 公司简介 -->
+        <company-resume-module
+            class="v-gap"
+            title="{{ companyResumeData.title }}"
+            bottom-num="{{ companyResumeData.bottomNum }}"
+            info="{{ companyResumeData.list }}" />
+
+        <!-- 核心成员 -->
+        <core-member-module
+            class="v-gap"
+            title="{{ coreMemberData.title }}"
+            bottom-num="{{ coreMemberData.bottomNum }}"
+            info="{{ coreMemberData.list }}" />
+        
+        <!-- 服务客户 -->
+        <service-customer-module 
+            class="v-gap"
+            title="{{ serviceCustomerData.title }}"
+            bottom-num="{{ serviceCustomerData.bottomNum }}"
+            info="{{ serviceCustomerData.list }}" />
+        
+        <!-- 联系我们 -->
+        <contact-module
+            title="{{ contactData.title }}"
+            bottom-num="{{ contactData.bottomNum }}"
+            info="{{ contactData.info }}"/>
+
+        <!-- 装饰物 -->
+        <decorative-materiel-line />
+    </view>
+
+    <!-- 官网为空提示 -->
+    <sz-empty 
+        style="display: {{ empty ? 'block' : 'none' }}" 
+        img="/images/website-empty.png" 
+        title="暂无官网信息" />
+
+    <!-- 留言球 -->
+    <fly-circle bind:getphone="getphone" class="fly-circle" title="留言" />
+
+</view>

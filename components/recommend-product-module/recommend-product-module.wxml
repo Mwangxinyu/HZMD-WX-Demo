@@ -1,0 +1,12 @@
+<card-panel class="container" bottom-num="{{ bottomNum }}" title="{{ title }}">
+    <view bind:tap="jumpProducts" wx:if="{{ more }}" class="more-btn" slot="more">查看更多</view>
+    <view class="content {{ gapClassName }}" slot="content">
+        <product-card 
+            data-product-id="{{ item.id }}"
+            bind:tap="jumpProductDetail"
+            wx:for="{{ listData }}" 
+            wx:key="{{ item.id }}}"
+            info="{{ item }}"
+            shadow />
+    </view>
+</card-panel>

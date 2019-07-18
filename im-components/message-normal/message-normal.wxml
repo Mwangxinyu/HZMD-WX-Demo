@@ -1,0 +1,7 @@
+<view class="message-normal {{ last ? 'last' : '' }}">
+    <text wx:if="{{ info.date }}" class="date">{{ info.date }}</text>
+    <view class="main {{ info.type }}" style="margin-top: {{ !info.date ? '28' : '0' }}rpx">
+        <image src="{{ info.avatar }}"  />
+        <view class="content {{ info.type }}">{{ info.message }}</view>
+    </view>
+</view>

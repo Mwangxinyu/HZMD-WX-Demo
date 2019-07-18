@@ -1,0 +1,79 @@
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-box {
+    position: relative;
+    font-size: 0;
+}
+
+.image-box.one:before {
+    content: '';
+    display: flex;
+    width: 231rpx;
+    height: 231rpx;
+    border-radius: 50%;
+    border: 2rpx solid #00A0FF;
+    position: absolute;
+    top: -18rpx;
+    left: -20rpx;
+}
+
+.image-box.one:after {
+    content: '';
+    display: flex;
+    width: 231rpx;
+    height: 231rpx;
+    border-radius: 50%;
+    border: 2rpx dashed #31C6A5;
+    position: absolute;
+    top: -14rpx;
+    left: -11rpx;
+}
+
+.image-box.two:before {
+    content: '';
+    display: flex;
+    width: 231rpx;
+    height: 231rpx;
+    border-radius: 50%;
+    border: 2rpx dashed #00A0FF;
+    position: absolute;
+    top: -18rpx;
+    left: -20rpx;
+}
+
+.image-box.two:after {
+    content: '';
+    display: flex;
+    width: 231rpx;
+    height: 231rpx;
+    border-radius: 50%;
+    border: 2rpx solid #31C6A5;
+    position: absolute;
+    top: -14rpx;
+    left: -11rpx;
+}
+
+.image-box image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    background-color: #BCBCBC;
+}
+
+.member-card .name {
+    font-size: 26rpx;
+    color: #1D1D25;
+    line-height: 37rpx;
+    margin-top: 37rpx;
+}
+
+.member-card .position {
+    font-size: 22rpx;
+    color: #CACCCF;
+    line-height: 30rpx;
+    margin-top: 4rpx;
+}

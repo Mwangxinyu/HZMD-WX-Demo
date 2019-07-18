@@ -1,0 +1,17 @@
+{
+    "usingComponents": {
+        "materiel-holder": "/base/materiel-holder/materiel-holder",
+        "fly-circle": "/base/fly-circle/fly-circle",
+        "decorative-materiel-line": "/base/decorative-materiel-line/decorative-materiel-line",
+
+        "card-main": "/components/card-main/card-main",
+        "card-materiel-module": "/components/card-materiel-module/card-materiel-module",
+        "recommend-product-module": "/components/recommend-product-module/recommend-product-module",
+        "person-resume-module": "/components/person-resume-module/person-resume-module",
+        "person-tag-module": "/components/person-tag-module/person-tag-module",
+        "show-info-module": "/components/show-info-module/show-info-module",
+
+        "trans-panel": "/base/trans-panel/trans-panel"
+
+    }
+}

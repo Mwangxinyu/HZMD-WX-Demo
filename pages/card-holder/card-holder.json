@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "sz-search": "/base/sz-search/sz-search",
+        "card-holder-item": "/components/card-holder-item/card-holder-item",
+        "sz-modal": "/base/sz-modal/sz-modal"        
+    },
+    "navigationBarTitleText": "名片夹"
+}

@@ -1,0 +1,7 @@
+@import '../../styles/common.wxss';
+
+.content {
+    font-size: 26rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 40rpx;
+}

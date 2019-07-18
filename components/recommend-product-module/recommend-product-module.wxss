@@ -1,0 +1,12 @@
+@import '../../styles/common.wxss';
+
+.more-btn {
+    font-size: 22rpx;
+    color: rgba(187, 187, 187, 1);
+    line-height: 30rpx;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}

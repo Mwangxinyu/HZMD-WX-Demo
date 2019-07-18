@@ -1,0 +1,8 @@
+<view class="card-panel {{ bg }}" style="padding-bottom: {{ bottomNum }}rpx">
+    <view class="header {{ gapClassName }} {{ titleCenter ? 'center' : '' }} {{ gray ? 'gray': '' }}">
+        <text wx:if="{{ gray }}" class="gray">{{ title }}</text>
+        <text wx:else class="title">{{ title }}</text>
+        <slot name="more"></slot>
+    </view>
+    <slot name="content"></slot>
+</view>

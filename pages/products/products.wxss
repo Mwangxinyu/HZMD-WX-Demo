@@ -1,0 +1,17 @@
+@import '../../styles/common.wxss';
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20rpx;
+    margin-top: 25rpx
+}
+
+product-card {
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+product-card:nth-child(2n) {
+    margin-right: 0;
+}

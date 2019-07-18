@@ -1,0 +1,36 @@
+.product-detail-materiel {
+    width: 100%;
+    height: 110rpx;
+    background-color: #fff;
+    display: flex;
+}
+
+.product-detail-materiel .button {
+    width: 300rpx;
+    display: flex;
+    flex: 1;
+}
+
+.product-detail-materiel .button view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.product-detail-materiel .button view text {
+    font-size: 22rpx;
+    color: #999;
+    line-height: 30rpx;
+}
+.product-detail-materiel .consult {
+    width: 400rpx;
+    height: 100%;
+    background-color: #00A0FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color: #fff;
+    line-height: 45rpx;
+}

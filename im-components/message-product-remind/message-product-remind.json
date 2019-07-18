@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "sz-button": "/base/sz-button/sz-button"
+    },
+    "component": true
+}

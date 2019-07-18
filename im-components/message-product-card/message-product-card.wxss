@@ -1,0 +1,147 @@
+@import '../../styles/common.wxss';
+
+.message-product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    padding-bottom: 50rpx;
+}
+
+.message-product-card .date {
+    font-size: 22rpx;
+    color: rgba(155, 155, 155, 1);
+    line-height: 30rpx;
+    padding: 36rpx 0 35rpx;
+    width: 100%;
+    text-align: center;
+}
+
+.message-product-card .main {
+    display: flex;
+}
+
+.main.service {
+    flex-direction: row;
+}
+
+.main.me {
+    flex-direction: row-reverse;
+}
+
+.main image {
+    width: 80rpx;
+    height: 80rpx;
+    background-color: #BCBCBC;
+    margin: 0 20rpx;
+}
+
+.main .content {
+    max-width: 510rpx;
+    min-height: 220rpx;
+    padding: 20rpx;
+    border-radius: 8rpx;
+    font-size: 32rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 40rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content image {
+    width: 90rpx;
+    height: 90rpx;
+    border: 2rpx solid #EEEEEE;
+    background-color: #BCBCBC;
+    position: absolute;
+    right: 20rpx;
+    bottom: 20rpx;
+    margin: 0;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box .title {
+    font-size: 32rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 38rpx;
+    margin-bottom: 6rpx;
+    height: 76rpx;
+    width: 100%;
+}
+
+.info-box .sale-price text {
+    text-decoration: line-through;
+}
+
+.info-box .trans-price text {
+    font-size: 28rpx;
+    color: rgba(0, 160, 255, 1);
+    line-height: 40rpx;
+}
+
+.info-box .price {
+    font-size: 24rpx;
+    color: rgba(155, 155, 155, 1);
+    line-height: 40rpx;
+}
+
+
+
+.content.service {
+    background-color: #fff;
+    border: 2rpx solid #CCC;
+}
+
+.content:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.content:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.content.service:before {
+    border-width: 12rpx 10rpx 12rpx 0;
+    border-color: transparent #CCC transparent transparent;
+    top: 28rpx;
+    left: -10rpx;
+}
+
+.content.service:after {
+    border-width: 12rpx 10rpx 12rpx 0;
+    border-color: transparent #fff transparent transparent;
+    top: 28rpx;
+    left: -8rpx;
+}
+
+.content.me {
+    background-color: #fff;
+    border: 2rpx solid #CCC;
+}
+
+.content.me:before {
+    border-width: 12rpx 0 12rpx 10rpx;
+    border-color: transparent transparent transparent #CCC;
+    top: 28rpx;
+    right: -10rpx;
+}
+
+.content.me:after {
+    border-width: 12rpx 0 12rpx 10rpx;
+    border-color: transparent transparent transparent #fff;
+    top: 28rpx;
+    right: -8rpx;
+}

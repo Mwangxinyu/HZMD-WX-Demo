@@ -1,0 +1,14 @@
+<view class="product-detail-materiel">
+    <view class="button">
+        <view bind:tap="jumpProductPage" class="index-btn">
+            <text>产品首页</text>
+        </view>
+        <view class="trans-btn">
+            <text>转发</text>
+        </view>
+        <view class="call-btn">
+            <text>拨打电话</text>
+        </view>
+    </view>
+    <view class="consult">立即咨询</view>
+</view>

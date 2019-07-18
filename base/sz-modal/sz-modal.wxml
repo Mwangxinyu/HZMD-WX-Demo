@@ -1,0 +1,15 @@
+<view class="sz-modal" catch:touchmove="{{ true }}">
+    <view class="modal-box {{ animation ? 'animation' : '' }}">
+        <view class="header">微信授权</view>
+        <view class="content">
+            <image  />
+            <text class="title">哨子智能科技申请获得以下权限：</text>
+            <view wx:if="{{ type === 'userInfo' }}" class="info">获得你的公开信息（昵称、头像等）</view>
+        </view>
+        <view class="control-panel">
+            <button bind:tap="cancel" class="cancel">拒接</button>
+            <button bind:tap="getInfo" class="agree" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">允许</button>
+        </view>
+    </view>
+    <view class="mask {{ animation ? 'animation' : '' }}"></view>
+</view>

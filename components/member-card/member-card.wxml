@@ -1,0 +1,7 @@
+<view class="member-card">
+    <view class="image-box {{ lineClassName }}">
+        <image src="{{ info.img }}" />
+    </view>
+    <text class="name">{{ info.name }}</text>
+    <text class="position">{{ info.position }}</text>
+</view>

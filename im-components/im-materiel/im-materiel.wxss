@@ -1,0 +1,61 @@
+.im-materiel {
+    background-color: #fff;
+    border-top: 2rpx solid rgb(225, 227, 228);
+    padding-bottom: 15rpx;
+}
+
+.im-materiel .fast-panel {
+    display: flex;
+    align-items: center;
+    padding: 18rpx 0 16rpx;
+
+}
+
+.im-materiel .fast-panel text {
+    font-size: 24rpx;
+    color: #666;
+    line-height: 33rpx;
+    margin-left: 25rpx;
+    margin-right: 22rpx;
+}
+
+.im-materiel .fast-panel view {
+    border: 1px solid rgba(202, 204, 207, 1);
+    padding: 8rpx 12rpx;
+    font-size: 24rpx;
+    color: #666;
+    line-height: 33rpx;
+    border-radius: 48rpx;
+    margin-right: 24rpx;
+}
+
+.im-materiel .im-input {
+    display: flex;
+    align-items: center;
+    height: 72rpx;
+    padding: 0rpx 20rpx;
+}
+
+.im-materiel .im-input .voice {
+    width: 58rpx;
+    height: 58rpx;
+    border-radius: 50%;
+    background-color: #BCBCBC;
+}
+
+.im-materiel .im-input input {
+    flex: 1;
+    height: 100%;
+    margin: 0 18rpx;    
+    border-radius:8px;
+    border:1px solid rgba(202,204,207,1);
+    padding: 8rpx 6rpx;
+    box-sizing: border-box;
+}
+
+.im-materiel .im-input .emoji {
+    width: 58rpx;
+    height: 58rpx;
+    border-radius: 50%;
+    background-color: #BCBCBC;
+}

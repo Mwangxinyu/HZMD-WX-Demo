@@ -1,0 +1,13 @@
+<view class="service-materiel">
+    <view 
+        wx:if="{{ validation }}"
+        bind:tap="jumpChat"
+        class="fly-box">
+        <text class="icon iconfont icon-liuyan"></text>
+        <text class="text">{{ title }}</text>
+    </view>
+    <button wx:else  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+        <text class="icon iconfont icon-liuyan"></text>
+        <text class="text">{{ title }}</text>
+    </button> 
+</view>

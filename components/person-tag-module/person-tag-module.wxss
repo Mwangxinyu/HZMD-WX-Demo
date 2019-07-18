@@ -1,0 +1,13 @@
+@import '../../styles/common.wxss';
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag-item {
+    margin-right: 32rpx;
+}
+
+.tag-item:last-child {
+    margin-right: 0;
+}

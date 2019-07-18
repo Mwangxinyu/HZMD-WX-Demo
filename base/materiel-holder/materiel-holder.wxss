@@ -1,0 +1,16 @@
+@import '../../styles/iconfont.wxss';
+
+.card-holder-materiel {
+    width:65rpx;
+    height:75rpx;
+    background:rgba(0,0,0,0.5);
+    border-radius:0px 0px 78rpx 78rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.card-holder-materiel text {
+    color: #fff;
+    margin-top: 20rpx;
+    font-size: 33rpx;
+}

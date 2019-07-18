@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "product-swiper-module": "/components/product-swiper-module/product-swiper-module",
+        "show-info-module": "/components/show-info-module/show-info-module",
+        "decorative-materiel-line": "/base/decorative-materiel-line/decorative-materiel-line",
+        "product-detail-materiel": "/components/product-detail-materiel/product-detail-materiel"
+    },
+    "navigationBarTitleText": "产品详情"
+}

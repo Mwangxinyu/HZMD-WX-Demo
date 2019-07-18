@@ -1,0 +1,12 @@
+@import '../../styles/common.wxss';
+
+.product-detail {
+    padding-bottom: 110rpx;
+}
+
+product-detail-materiel {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

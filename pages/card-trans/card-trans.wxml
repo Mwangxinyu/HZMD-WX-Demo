@@ -1,0 +1,11 @@
+<view class="container">
+    
+    <!-- 名片信息 -->
+    <card-main qr info="{{ userData }}" class="card-box" />
+
+    <!-- 保存相册 -->
+    <sz-button type="primary" class="savePoster">保存名片海报分享到朋友圈</sz-button>
+
+    <!-- <canvas hidden="{{ false }}" style="width: 500rpx;height: 500rpx;" canvas-id="posterCanvas" /> -->
+
+</view>

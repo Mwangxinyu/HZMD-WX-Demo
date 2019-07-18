@@ -1,0 +1,7 @@
+<view class="like-caller-panel">
+    <view class="list-box">
+        <image wx:for="{{ info.list }}" wx:key="{{ index }}" class="item"></image>
+        <view class="iconfont {{ type === 'caller' ? 'icon-shenglvehao' : 'icon-dianzan1' }} more-btn item"></view>
+    </view>
+    <text class="text">已有{{ info.totalNum }}人{{ type === 'caller' ? '浏览' : '点赞' }}</text>
+</view>

@@ -1,0 +1,77 @@
+.sz-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9rpx 25rpx 20rpx;
+    background-color: #fff;
+    display: flex;
+}
+
+.search-box {
+    width: 100%;
+    background-color: #F7F7F9;
+    border-radius: 30rpx;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+    padding-right: 78rpx;
+    box-sizing: border-box;
+}
+
+.search-box .icon-box {
+    width: 62rpx;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-box .icon {
+    width: 20rpx;
+    height: 20rpx;
+    margin-right: 17rpx;
+    background-color: #BCBCBC;
+}
+
+.search-box input {
+    flex: 1;
+    height: 100%;
+    font-size: 26rpx;
+    color: #1D1D25;
+    line-height: 37rpx;
+}
+
+.placeholder {
+    font-size: 26rpx;
+    color: #B9B9B9;
+}
+
+.cancel-icon-box {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 78rpx;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.cancel-icon {
+    width: 28rpx;
+    height: 28rpx;
+    background-color: #BCBCBC;
+}
+
+.cancel-btn {
+    width: 70rpx;
+    height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    color: #9B9B9B;
+    padding-left: 20rpx;
+}

@@ -1,0 +1,5 @@
+@import '../../styles/common.wxss';
+
+.card-list {
+    padding: 0 30rpx;
+}

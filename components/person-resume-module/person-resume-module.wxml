@@ -1,0 +1,5 @@
+<card-panel title="{{ title }}" bottom-num="{{ bottomNum }}">
+    <view class="content {{ gapClassName }}" slot="content">
+        <rich-text nodes="{{ info }}"></rich-text>
+    </view>
+</card-panel>

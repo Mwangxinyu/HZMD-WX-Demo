@@ -1,0 +1,9 @@
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 28rpx;
+}
+
+.content member-card:last-child {
+    margin-left: 130rpx;
+}

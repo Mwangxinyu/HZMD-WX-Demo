@@ -1,0 +1,4 @@
+<view class="sz-empty">
+    <image src="{{ img }}" />
+    <text>{{ title }}</text>
+</view>

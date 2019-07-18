@@ -1,0 +1,17 @@
+<view class="sz-swiper">
+    <swiper 
+        bind:change="getSwiperChange"
+        style="height: {{ height }}rpx"
+        indicator-dots="{{ indicatorDots }}"
+        autoplay="{{ autoplay }}"
+        circular="{{ circular }}"
+        indicator-color="{{ indicatorDotsColor }}"
+        indicator-active-color="{{ indicatorDotsSelectColor }}">
+        <swiper-item wx:for="{{ imgList }}" wx:key="{{ index }}">
+            <image src="{{ item }}"/>
+        </swiper-item>
+    </swiper>
+    <view wx:if="{{ tip }}" class="tip">
+        {{ currentIndex + 1 }}/{{ imgList.length }}
+    </view>
+</view>

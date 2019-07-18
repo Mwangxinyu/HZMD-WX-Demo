@@ -1,0 +1,33 @@
+<wxs src="../../utils/filters.wxs" module="filters" />
+
+<view class="card-main">
+    <image class="avatar" src="{{ info.avatar }}" />
+    <text class="name">{{ info.lastName }}{{ info.firstName }}</text>
+    <text class="position">{{ info.position }}</text>
+    <text wx:if="{{ info }}" class="tel">{{ filters._telFormat(info.tel) }}</text>
+    <view class="company-box">{{ info.companyName }}</view>
+    <view wx:if="{{ !qr }}" class="more-info {{ addClass }}">
+        <view class="item">
+            <text class="label">手机</text>
+            <text class="value">{{ info.tel }}</text>
+            <sz-button type="small" data-val="{{ info.tel }}" bind:tap="callPhone" radius="5">呼叫</sz-button>
+        </view>
+        <view class="item">
+            <text class="label">微信</text>
+            <text class="value">{{ info.wechat }}</text>
+            <sz-button type="small" data-val="{{ info.wechat }}" bind:tap="setClip" radius="5">复制</sz-button>
+        </view>
+        <view class="item">
+            <text class="label">邮箱</text>
+            <text class="value">{{ info.email }}</text>
+            <sz-button type="small" data-val="{{ info.email }}" bind:tap="setClip" radius="5">复制</sz-button>
+        </view>
+        <view class="item last">
+            <text class="label">地址</text>
+            <text class="value">{{ info.address }}</text>
+            <sz-button type="small" data-val="{{ info.address }}" bind:tap="setClip" radius="5">复制</sz-button>
+        </view>
+    </view>
+    <image wx:if="{{ qr }}" class="qr" src="{{ info.qr }}" />
+    <view wx:if="{{ !qr }}" class="more" bind:tap="getMoreInfo">{{ moreFlag ? '点击查看更多信息' : '点击收起更多信息' }}</view>
+</view>

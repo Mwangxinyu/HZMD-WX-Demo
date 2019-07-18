@@ -1,0 +1,129 @@
+@import '../../styles/common.wxss';
+
+.card-main {
+    margin: 0 auto;
+    width: 670rpx;
+    /* height: 768rpx; */
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 20rpx 30rpx 0px rgba(18, 55, 123, 0.05);
+    border-radius: 15rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 83rpx 0 0 0;
+}
+
+.card-main .avatar {
+    width: 343rpx;
+    height: 343rpx;
+    background: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 4rpx solid #F2F4F8;
+    border-radius: 50%;
+}
+
+.card-main .name {
+    font-size: 42rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 59rpx;
+    margin-top: 43rpx;
+}
+
+.card-main .position {
+    font-size: 28rpx;
+    color: rgba(187, 187, 187, 1);
+    line-height: 40rpx;
+    margin-top: 6rpx;
+}
+
+.card-main .tel {
+    font-size: 30rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 42rpx;
+    margin-top: 91rpx;
+}
+
+.card-main .company-box {
+    margin-top: 8rpx;
+}
+
+.card-main .company-box:before {
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    margin-right: 22rpx;
+    width: 45rpx;
+    height: 2rpx;
+    background: linear-gradient(-90deg, rgba(187, 187, 187, 1), rgba(187, 187, 187, 0));
+}
+
+.card-main .company-box:after {
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    margin-left: 22rpx;
+    width: 45rpx;
+    height: 2rpx;
+    background: linear-gradient(-90deg, rgba(187, 187, 187, 0), rgba(187, 187, 187, 1));
+}
+
+.card-main .qr {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    background-color: #E1E1E1;
+    margin-top: 35rpx;
+    margin-bottom: 45rpx;
+}
+
+.card-main .more {
+    font-size: 22rpx;
+    color: rgba(187, 187, 187, 1);
+    line-height: 30rpx;
+    margin-top: 30rpx;
+    width: 100%;
+    text-align: center;
+    padding: 35rpx 0;
+}
+
+.card-main .more-info {
+    position: relative;
+    overflow: hidden;
+    transition: all .6s;
+}
+
+.card-main .more-info.hidden {
+    margin-top: 0rpx;
+    max-height: 0;
+}
+
+.card-main .more-info.show {
+    margin-top: 60rpx;
+    max-height: 362rpx;
+}
+
+.more-info .item {
+    padding: 0 40rpx;
+    display: flex;
+    margin-bottom: 25rpx;
+}
+
+.more-info .item.last {
+    margin-bottom: 0;
+}
+
+.more-info .item .label {
+    font-size: 28rpx;
+    color: rgba(155, 155, 155, 1);
+    line-height: 40rpx;
+}
+
+.more-info .item .value {
+    width: 378rpx;
+    margin-left: 34rpx;
+    margin-right: 22rpx;
+    font-size: 28rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 45rpx;
+}
+

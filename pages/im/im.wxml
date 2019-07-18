@@ -1,0 +1,12 @@
+<view class="im-container">
+
+    <!-- 显示窗口 -->
+    <chat-panel 
+        message-list="{{ messageList }}" />
+
+    <!-- 聊天物料 -->
+    <im-materiel 
+        bind:callPhone="callPhone"
+        bind:sendMsg="sendMsg" />
+
+</view>

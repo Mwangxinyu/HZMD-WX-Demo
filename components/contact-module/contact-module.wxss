@@ -1,0 +1,54 @@
+@import '../../styles/common.wxss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    margin-bottom: 40rpx;
+}
+
+.info-box .main {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box .main .item {
+    display: flex;
+    margin-bottom: 18rpx;
+}
+
+.info-box .main .item:last-child {
+    margin-bottom: 0;
+}
+
+.info-box .main .item .label {
+    font-size: 22rpx;
+    color: #CACCCF;
+    line-height: 30rpx;
+}
+
+.info-box .main .item .value {
+    font-size: 22rpx;
+    color: #1D1D25;
+    line-height: 30rpx;
+    margin-left: 18rpx;
+    min-width: 334rpx;
+    max-width: 334rpx;
+}
+
+.info-box image {
+    margin-top: 17rpx;
+    margin-left: 14rpx;
+    width: 140rpx;
+    height: 140rpx;
+    background-color: #BCBCBC;
+}
+
+.content sz-button {
+    width: 426rpx;
+    height: 70rpx;
+}

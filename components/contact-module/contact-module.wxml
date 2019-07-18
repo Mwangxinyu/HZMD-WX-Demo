@@ -1,0 +1,26 @@
+<card-panel title="{{ title }}" bottom-num="{{ bottomNum }}" titleCenter>
+    <view class="content" slot="content">
+        <view class="info-box">
+            <view class="main">
+                <view class="item">
+                    <text class="label">地址</text>
+                    <text class="value ellipsis-2">{{ info.address }}</text>
+                </view>
+                <view class="item">
+                    <text class="label">时间</text>
+                    <text class="value">{{ info.date }}</text>
+                </view>
+                <view class="item">
+                    <text class="label">邮箱</text>
+                    <text class="value">{{ info.email }}</text>
+                </view>
+                <view class="item">
+                    <text class="label">电话</text>
+                    <text class="value">{{ info.tel }}</text>
+                </view>
+            </view>
+            <image src="{{ info.qr }}" />
+        </view>
+        <sz-button>分享官网</sz-button>
+    </view>
+</card-panel>

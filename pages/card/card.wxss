@@ -1,0 +1,15 @@
+/**index.wxss**/
+
+@import '../../styles/common.wxss';
+
+.card-box {
+    margin: 30rpx 0 50rpx 0; 
+}
+
+.materiel-holder {
+    position: fixed;
+    top: 0;
+    left: 25rpx;
+    z-index: 100;
+}
+

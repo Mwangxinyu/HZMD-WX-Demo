@@ -1,0 +1,18 @@
+<view class="im-materiel">
+    <view class="fast-panel">
+        <text>我想</text>
+        <view>加微信</view>
+        <view bind:tap="callPhone">拨打电话</view>
+        <view>保存名片</view>
+    </view>
+    <view class="im-input">
+        <view class="voice"></view>
+        <input 
+            value="{{ messageVal }}"
+            bindconfirm="sendMsg"
+            confirm-hold 
+            cursor-spacing="15" 
+            type="text" />
+        <view class="emoji"></view>
+    </view>
+</view>

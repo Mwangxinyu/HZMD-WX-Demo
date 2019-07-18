@@ -1,0 +1,20 @@
+<view class="container">
+    
+    <!-- 搜索 -->
+    <sz-search bind:val="getSearchVal" focus placeholder="请输入您要搜索的人员姓名或公司名" />
+
+    <!-- 名片夹 list -->
+    <view hidden="{{ emptyFlag }}" class="card-list">
+        <card-holder-item
+            wx:for="{{ searchResult }}"
+            wx:key="{{ index }}"
+            info="{{ item }}" />
+    </view>
+
+    <!-- 查询为空提示 -->
+    <sz-empty 
+        style="display: {{ (searchVal.length > 0) && emptyFlag ? 'block' : 'none' }}" 
+        img="/images/search-empty.png" 
+        title="对不起，没有找到信息包含“{{ searchVal }}”的名片" />
+    
+</view>

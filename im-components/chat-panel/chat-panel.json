@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "message-normal": "/im-components/message-normal/message-normal",
+        "message-product-remind": "/im-components/message-product-remind/message-product-remind",
+        "message-product-card": "/im-components/message-product-card/message-product-card"
+    },
+    "component": true
+}

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "sz-swiper": "/base/sz-swiper/sz-swiper"
+    },
+    "component": true
+}

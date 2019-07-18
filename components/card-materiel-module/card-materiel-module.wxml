@@ -1,0 +1,10 @@
+<view class="card-materiel full-gap">
+    <view class="control-box">
+        <sz-button bind:tap="transCard">转发名片</sz-button>
+        <sz-button bind:tap="addContact" type="primary">添加通讯录</sz-button>
+    </view>
+    <view class="show-box">
+        <like-caller-panel info="{{ callerData }}" type="caller" />
+        <like-caller-panel info="{{ likeData }}" type="like" />
+    </view>
+</view>

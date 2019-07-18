@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "chat-panel": "/im-components/chat-panel/chat-panel",
+        "im-materiel": "/im-components/im-materiel/im-materiel"
+    },
+    "navigationBarTitleText": "",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+}

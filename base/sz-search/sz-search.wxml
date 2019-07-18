@@ -1,0 +1,21 @@
+<view class="sz-search" bind:tap="jumpSearch">
+    <view class="search-box" style="height: {{ height }}rpx;">
+        <view class="icon-box">
+            <view class="icon"></view>
+        </view>
+        <input 
+            type="text"
+            focus="{{ currentFocus }}"
+            disabled="{{ disabled }}"
+            bindinput="inputCheck"
+            bindfocus="inputFocus"
+            bindblur="inputBlur"
+            value="{{ inputVal }}" 
+            placeholder="{{ placeholder }}" 
+            placeholder-class="placeholder" />
+        <view class="cancel-icon-box" hidden="{{ inputVal.length === 0 }}" bind:tap="delVal">
+            <view class="cancel-icon"></view>
+        </view>
+    </view>
+    <view hidden="{{ !cancelFlag }}" class="cancel-btn" bind:tap="leaveSearch">取消</view>
+</view>

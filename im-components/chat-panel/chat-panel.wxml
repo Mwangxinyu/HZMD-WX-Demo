@@ -1,0 +1,28 @@
+<scroll-view 
+    scroll-y 
+    enable-back-to-top
+    scroll-with-animation
+    scroll-into-view="{{ 'item' + messageList.length }}" 
+    class="chat-panel">
+    
+    <block wx:for="{{ messageList }}" wx:key="{{ index }}">
+        <view id="item{{ index + 1 }}">
+            <message-normal 
+                last="{{ (index + 1 === messageList.length) }}"
+                wx:if="{{ item.messageType === 'normal' }}"
+                info="{{ item }}"
+                type="service" />
+
+            <message-product-remind
+                last="{{ (index + 1 === messageList.length) }}"
+                wx:if="{{ item.messageType === 'productRemind' }}"
+                info="{{ item }}" />
+            
+            <message-product-card
+                last="{{ (index + 1 === messageList.length) }}"
+                wx:if="{{ item.messageType === 'productCard' }}"
+                info="{{ item }}" />
+        </view>
+    </block>
+
+</scroll-view>

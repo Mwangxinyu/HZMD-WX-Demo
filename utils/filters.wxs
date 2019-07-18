@@ -1,0 +1,12 @@
+// filters
+
+var _telFormat = function (tel) {
+    var arr = tel.toString().split('');
+    arr[2] +=  ' ';
+    arr[6] +=  ' ';
+    return arr.join('');
+}
+
+module.exports = {
+    _telFormat: _telFormat
+}

@@ -1,0 +1,16 @@
+<view class="trans-panel" catch:touchmove="{{ true }}">
+    <view class="action-sheet {{ animation ? 'animation' : '' }}">
+        <view class="content">
+            <button open-type="share" class="item">
+                <image src="/images/send-firend.png" class="icon-box" />
+                <text>发给微信好友</text>
+            </button>
+            <view bind:tap="jumpCardTans" class="item">
+                <image src="/images/send-friends-circle.png" class="icon-box" />
+                <text>分享到朋友圈</text>
+            </view>
+        </view>
+        <view bind:tap="cancel" class="button">取消</view>
+    </view>
+    <view bind:tap="cancel" class="mask {{ animation ? 'animation' : '' }}"></view>
+</view>

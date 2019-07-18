@@ -1,0 +1,20 @@
+<view class="message-product-card {{ last ? 'last' : '' }}">
+    <text wx:if="{{ info.date }}" class="date">{{ info.date }}</text>
+    <view class="main {{ info.type }}" style="margin-top: {{ !info.date ? '28' : '0' }}rpx">
+        <image src="{{ info.avatar }}" />
+        <view class="content {{ info.type }}">
+            <image src="{{ info.img }}" />
+            <view class="info-box">
+                <text class="title ellipsis-2">{{ info.title }}</text>
+                <view class="sale-price price">
+                    价格：
+                    <text>{{ info.salePrice }}元/人</text>
+                </view>
+                <view class="trans-price price">
+                    促销价：
+                    <text>{{ info.transPrice }}元/人</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

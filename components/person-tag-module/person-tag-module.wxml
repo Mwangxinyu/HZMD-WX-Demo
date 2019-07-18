@@ -1,0 +1,10 @@
+<card-panel title="{{ title }}" bottom-num="{{ bottomNum }}">
+    <view slot="content" class="content {{ gapClassName }}">
+        <sz-tag 
+            class="tag-item" 
+            wx:for="{{ listData }}" 
+            wx:key="{{ index }}" 
+            name="{{ item.name }}"
+            like="{{ item.like }}" />
+    </view>
+</card-panel>

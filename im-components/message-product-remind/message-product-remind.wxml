@@ -1,0 +1,20 @@
+<view class="message-product-remind {{ last ? 'last' : '' }}">
+    <text class="date">{{ info.date }}</text>
+    <view class="main">
+        <view class="content">
+            <image src="{{ info.img }}" />
+            <view class="info-box">
+                <text class="title ellipsis-2">{{ info.title }}</text>
+                <view class="sale-price price">
+                    价格：
+                    <text>{{ info.salePrice }}元/人</text>
+                </view>
+                <view class="trans-price price">
+                    促销价：
+                    <text>{{ info.transPrice }}元/人</text>
+                </view>
+            </view>
+        </view>
+        <sz-button>发送产品</sz-button>
+    </view>
+</view>

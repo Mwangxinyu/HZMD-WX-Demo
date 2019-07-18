@@ -1,0 +1,24 @@
+<view class="product-swiper-card {{ currentShadow }}">
+    <!-- 产品展示 -->
+    <sz-swiper
+        class="v-gap"
+        tip
+        height="{{ info.swiperData.height }}"
+        img-list="{{ info.swiperData.imgList }}"
+        circular="{{ info.swiperData.circular }}"
+        autoplay="{{ info.swiperData.autoplay }}"
+        indicator-dots="{{ info.swiperData.indicatorDots }}"
+        indicator-dots-color="{{ info.swiperData.indicatorDotsColor }}"
+        indicator-dots-select-color="{{ info.swiperData.indicatorDotsSelectColor }}"
+        interval="{{info.swiperData.interval }}"
+        duration="{{ info.swiperData.duration }}" />
+    <view class="info-box">
+        <text class="title ellipsis-2">{{ info.title }}</text>
+        <view class="sale-price price">价格：
+            <text>{{ info.salePrice }}元/人</text>
+        </view>
+        <view class="trans-price price">促销价：
+            <text>{{ info.transPrice }}元/人</text>
+        </view>
+    </view>
+</view>

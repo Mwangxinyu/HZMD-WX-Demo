@@ -1,0 +1,27 @@
+@import '../../styles/common.wxss';
+
+.im-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+chat-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 174rpx;
+    box-sizing: border-box;
+    background-color: rgb(247, 247, 249);
+}
+
+im-materiel {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

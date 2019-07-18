@@ -1,0 +1,123 @@
+.sz-modal {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.mask {
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.mask.animation {
+    opacity: .5;
+}
+
+.sz-modal .modal-box {
+    position: absolute;
+    z-index: 103;
+    bottom: 404rpx;
+    left: 65rpx;
+    width: 620rpx;
+    height: 526rpx;
+    background-color: #fff;
+    border-radius: 24rpx;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(0);
+    transition: all .4s;
+}
+
+.modal-box.animation {
+    transform: scale(1);
+}
+
+.modal-box .header {
+    font-size: 34rpx;
+    line-height: 48rpx;
+    color: #1D1D25;
+    width: 100%;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    border-bottom: 2rpx solid #CACCCF;
+}
+
+.modal-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-box image {
+    margin-top: 41rpx;
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+}
+
+.modal-box .title {
+    width: 498rpx;
+    font-size: 32rpx;
+    color: #1D1D25;
+    line-height: 45rpx;
+    margin-top: 26rpx;
+    padding-bottom: 27rpx;
+    border-bottom: 2rpx solid #C7C6C8;
+}
+
+.modal-box .info {
+    font-size: 28rpx;
+    color: #888;
+    line-height: 41rpx;
+    margin-top: 25rpx;
+    margin-bottom: 50rpx;
+}
+
+.modal-box .info:before {
+    content: '';
+    display: inline-block;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    margin-right: 19rpx;
+    background-color: #888;
+    vertical-align: middle;
+}
+
+.control-panel {
+    flex: 1;
+    display: flex;
+}
+
+.control-panel button {
+    flex: 1;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 34rpx;
+    color: #1D1D25;
+    line-height: 48rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top: 2rpx solid #CACCCF;
+}
+
+.control-panel .agree {
+    color: #2FB823;
+    border-left: 2rpx solid #CACCCF;
+}

@@ -1,0 +1,89 @@
+.trans-panel {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.mask {
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.mask.animation {
+    opacity: .5;
+}
+
+.trans-panel .action-sheet {
+    position: absolute;
+    z-index: 103;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    transform: translateY(500rpx);
+    transition: all .4s;
+}
+
+.action-sheet.animation {
+    transform: translateY(0);
+}
+
+.action-sheet .content {
+    width: 100%;
+    height: 270rpx;
+    display: flex;
+    background-color: #fff;
+    /* margin-bottom: 20rpx; */
+}
+
+.action-sheet .content .item {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-sheet .content button.item {
+    background-color: #fff;
+    padding: 0;
+}
+
+.item .icon-box {
+    width: 120rpx;
+    height: 120rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+}
+
+.item text {
+    font-size: 22rpx;
+    color: #4A4A4A;
+    line-height: 30rpx;
+    margin-top: 15rpx;
+}
+
+.button {
+    display: none;
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: #1D1D25;
+    font-size: 30rpx;
+    background-color: #fff;
+}

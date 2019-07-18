@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "sz-swiper": "/base/sz-swiper/sz-swiper",
+        "company-resume-module": "/components/company-resume-module/company-resume-module",
+        "core-member-module": "/components/core-member-module/core-member-module",
+        "service-customer-module": "/components/service-customer-module/service-customer-module",
+        "contact-module": "/components/contact-module/contact-module",
+        "decorative-materiel-line": "/base/decorative-materiel-line/decorative-materiel-line",
+        "fly-circle": "/base/fly-circle/fly-circle",
+        "sz-empty": "/base/sz-empty/sz-empty"
+    },
+    "navigationBarTitleText": "哨子官网"
+}

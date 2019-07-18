@@ -1,0 +1,40 @@
+<view class="card-holder-item">
+    <view class="from">{{ info.from }}</view>
+    <view class="card">
+        <view class="content">
+            <image src="{{ info.avatar }}"  />
+            <view class="info-box">
+                <view class="header">
+                    <text class="name">{{ info.lastName }}{{ info.firstName }}</text>
+                    <text class="position">{{ info.position }}</text>
+                </view>
+                <view class="item first">
+                    <view class="label iconfont icon-boda"></view>
+                    <view class="value">{{ info.tel }}</view>
+                </view>
+                <view class="item">
+                    <view class="label iconfont icon-youjian"></view>
+                    <view class="value">{{ info.email }}</view>
+                </view>
+                <view class="item last">
+                    <view class="label iconfont icon-didian"></view>
+                    <view class="value">{{ info.company }}</view>
+                </view>
+            </view>
+        </view>
+        <view class="star iconfont {{ currentStar ? 'icon-biaoxing' : 'icon-biaoxing1' }}"></view>
+        <view class="more iconfont icon-caozuo" catch:tap="showMoreBox">
+            <view hidden="{{ moreFlag }}" style="display: {{ moreFlag ? 'none'  : 'flex'}}" class="more-box">
+                <view wx:if="{{ !currentDisabled }}" bind:tap="starCheck" class="text">
+                    {{ currentStar ? '取消标星' : '标星名片' }}
+                </view>
+                <view class="text" bind:tap="disabledCheck">
+                    {{ currentDisabled ? '取消屏蔽' : '屏蔽名片' }}
+                </view>
+            </view>
+        </view>
+        <view wx:if="{{ currentDisabled }}" class="mask">
+            <text>已屏蔽此名片</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,48 @@
+/* 模块间的垂直间隙 */
+
+.v-gap {
+    margin-bottom: 20rpx;
+}
+
+/* 模块内部全部间距 */
+
+.full-gap {
+    padding: 30rpx 40rpx;
+}
+
+/* 顶部间距 */
+
+.t-gap {
+    padding-top: 30rpx;
+}
+
+/* 水平间距 */
+
+.h-gap {
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+}
+
+.ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.fly-circle {
+    position: fixed;
+    z-index: 100;
+    right: 30rpx;
+    bottom: 35rpx;
+}
+
+/* 去除 button 边线 */
+button:after {
+    display: none;
+}

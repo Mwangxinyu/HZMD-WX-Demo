@@ -1,0 +1,24 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    background-color: #fff;
+    border: 2rpx solid #00A0FF;
+    color: #00A0FF;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.primary {
+    background-color: #00A0FF;
+    color: #fff;
+}
+
+.small {
+    width: 96rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+    box-sizing: content-box;
+}

@@ -1,0 +1,63 @@
+@import '../../styles/common.wxss';
+.card-panel {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.card-panel.companyResumeBg {
+    background-image: url('http://sz-asset-new.oss-cn-hangzhou.aliyuncs.com/card/company-resume-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 133rpx;
+}
+
+.card-panel .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+}
+
+.card-panel .header.gray {
+    background-color: #F7F7F9;
+}
+
+.card-panel .header.center {
+    justify-content: center;
+}
+
+.card-panel .header .title {
+    font-size: 34rpx;
+    color: rgba(29, 29, 37, 1);
+    line-height: 48rpx;
+}
+
+.card-panel .header .gray {
+    flex: 1;
+    text-align: center;
+    font-size: 24rpx;
+    color: #999999;
+    line-height: 33rpx;
+}
+
+.card-panel .header .gray:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 170rpx;
+    height: 2rpx;
+    background: linear-gradient(90deg, rgba(225, 225, 225, 0), rgba(225, 225, 225, 1));
+    border-radius: 22rpx;
+    margin-right: 18rpx;
+}
+
+.card-panel .header .gray:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 170rpx;
+    height: 2rpx;
+    background: linear-gradient(-90deg, rgba(225, 225, 225, 0), rgba(225, 225, 225, 1));
+    border-radius: 22rpx;
+    margin-left: 18rpx;
+}

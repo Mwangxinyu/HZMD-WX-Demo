@@ -1,0 +1,20 @@
+<view class="container">
+    
+    <!-- 搜索 -->
+    <sz-search disabled placeholder="请输入您要搜索的人员姓名或公司名" />
+
+    <!-- 名片夹 list -->
+    <view class="card-list">
+        <card-holder-item
+            bind:tap="jumpCard"
+            wx:for="{{ cardList }}"
+            wx:key="{{ index }}"
+            info="{{ item }}" />
+    </view>
+
+    <!-- 用户信息授权 modal -->
+    <sz-modal 
+        wx:if="{{ modalFlag }}"
+        bind:cancel="modalCancel" />
+
+</view>

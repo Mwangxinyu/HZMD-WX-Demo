@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/card-holder/card-holder",
+        "pages/card/card",
+        "pages/products/products",
+        "pages/product-detail/product-detail",
+        "pages/website/website",
+        "pages/card-search/card-search",
+        "pages/card-trans/card-trans",
+        "pages/im/im",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundColor": "#F7F7F9",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "哨子智能名片",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/card/card",
+                "iconPath": "/images/card-tab.png",
+                "selectedIconPath": "/images/card-tab-select.png",
+                "text": "名片"
+            }, 
+            {
+                "pagePath": "pages/products/products",
+                "iconPath": "/images/product-tab.png",
+                "selectedIconPath": "/images/product-tab-select.png",
+                "text": "产品"
+            }, 
+            {
+                "pagePath": "pages/website/website",
+                "iconPath": "/images/website-tab.png",
+                "selectedIconPath": "/images/website-tab-select.png",
+                "text": "官网"
+            }
+        ],
+        "color": "#888",
+        "selectedColor": "#00A0FF",
+        "backgroundColor": "#fff"
+    }
+}
